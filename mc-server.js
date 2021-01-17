@@ -7,7 +7,7 @@ client.login('NzY1NTU5MjMwNjg1MjQ5NTQ2.X4Wklw._sa4f_va-wsmD7QY_msYbUDAkHA');
 
 const server = {
     ip: 'V7D0X7.myserver.gs', // Put your minecraft server IP or hostname here (e.g. '192.168.0.1')
-    port: 0 // Put your minecraft server port here (25565 is the default)
+    port: 25565 // Put your minecraft server port here (25565 is the default)
 };
 const commands = {
     status: {
@@ -20,7 +20,13 @@ const commands = {
         }
         
     },
-    ip: 
+    ip: {
+        command: '.ip',
+        text: {
+            main: 'The IP for the server is `{ip}:{port}`' // {ip} and {port} will show server ip and port from above
+        }
+    }
+};
 
 // Do not edit below this line unless you know what you're doing
 
@@ -64,4 +70,4 @@ function ipCommand(message) { // Handle IP command
     message.reply(commands.ip.text.main.replace('{ip}', server.ip).replace('{port}', server.port));
 }
 
-// Credit to The MG#8238 on Discord for improvements to this script
+// Credit to  Discord for improvements to this script
