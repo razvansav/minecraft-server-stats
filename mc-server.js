@@ -1,13 +1,13 @@
 const util = require('minecraft-server-util');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.login('your_token_here');
+client.login('NzY1NTU5MjMwNjg1MjQ5NTQ2.X4Wklw._sa4f_va-wsmD7QY_msYbUDAkHA');
 
 // IMPORTANT: You need to run "npm i minecraft-server-util@^3.0.1 discord.js@^12.3.1" (without quotes) in your terminal before executing this script
 
 const server = {
-    ip: '0.0.0.0', // Put your minecraft server IP or hostname here (e.g. '192.168.0.1')
-    port: 25565 // Put your minecraft server port here (25565 is the default)
+    ip: 'V7D0X7.myserver.gs', // Put your minecraft server IP or hostname here (e.g. '192.168.0.1')
+    port: 0 // Put your minecraft server port here (25565 is the default)
 };
 const commands = {
     status: {
@@ -20,13 +20,7 @@ const commands = {
         }
         
     },
-    ip: {
-        command: '.ip',
-        text: {
-            main: 'The IP for the server is `{ip}:{port}`' // {ip} and {port} will show server ip and port from above
-        }
-    }
-};
+    ip: 
 
 // Do not edit below this line unless you know what you're doing
 
